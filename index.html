@@ -2,10 +2,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit:no">
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Tomar guaraná">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-    <script type='text/javascript' src='assets/script.js'></script>
+    <link rel="shortcut icon" href="./assets/imagens/favicon.ico"/>
 
 </head>
 <body>
@@ -47,7 +50,7 @@
         </div>
         <div class="col-md-9 row">
         <div class="col-md-6">
-            <form>
+            <form name = "form3" method="post" onSubmit="return validateRadioDelete()">
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="radio1" id="radio1" value="optionCandidate1">
                 <label class="form-check-label" for="radio1">
@@ -62,15 +65,15 @@
             </form>
         </div>
             <div class="col-md-6 form-group">
-                <form>
+                <form name = "form2" method="post" onSubmit="return validateForm()">
                     <label for="nameCandidate">Nome do candidato</label>
-                    <input id="nameCandidate" class="form-control" type="text" placeholder="Nome" required>
-                    <label for="UploadImage">Foto do candidato</label>
-                    <input id="uploadImage" class="form-control-file" type="file" value="Carregar imagem" required>
+                    <input name="nameCandidate" class="form-control" type="text" placeholder="Nome" required>
+                    <label for="uploadImage">Foto do candidato</label>
+                    <input name="uploadImage" class="form-control-file" type="file" value="Carregar imagem" required>
                     <label for="description">Descrição</label>
-                    <input id="description" class="form-control" type="text" placeholder="Descrição do candidato" required>
+                    <input name="description" class="form-control" type="text" placeholder="Descrição do candidato" required>
                     <br/>
-                    <input class="btn btn-outline-dark" type="submit" id="addCandidate" value="Adicionar">
+                    <input class="btn btn-outline-dark" type="submit" value="Adicionar">
                 </form>
             </div>
     </div>
@@ -95,6 +98,8 @@
     </svg>
 </a>
 </footer>
+
+<script type="text/javascript" src="./js/script.js"></script>
 
 </body>
 </html>

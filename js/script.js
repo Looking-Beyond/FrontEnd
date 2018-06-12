@@ -12,3 +12,32 @@ function drawChart() {
 
     chart.draw(data, options);
 }
+
+function validateRadio() {
+  
+  		if (document.form1.radioCand[0].checked == false && document.form1.radioCand[1].checked == false && document.form1.radioCand[2].checked == false ) {
+    		alert('Por favor, selecione um candidato');
+    		return false;
+  		}
+  		return true;
+}
+
+function validateRadioDelete() {
+  
+  		if (document.form3.radio1.checked == false) {
+    		alert('Por favor, selecione um candidato para deletar!');
+    		return false;
+  		}
+  		return true;
+}
+
+function validateForm() {
+  
+  		if (document.form2.nameCandidate.value == "" || document.form2.nameCandidate.value == null || document.form2.nameCandidate.value.length < 3) {
+    		alert('Nome de candidato inválido');
+    		return false;
+
+  		}
+  		return true;
+ 
+}

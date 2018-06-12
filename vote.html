@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit:no">
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Tomar guaraná">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-    <script type='text/javascript' src='assets/script.js'></script>
+    <link rel="shortcut icon" href="./assets/imagens/favicon.ico"/>
 
 </head>
 <body>
@@ -44,13 +47,14 @@
             </ul>
         </nav>
     </div>
-    <div class="row col-md-9 grid">
+    <form name = "form1" class="row col-md-9 grid" method="post" onSubmit="return validateRadio()">
     <div class="col-md-4">
+
         <center>
             <img src="assets/candidato1.png" class="resolucao" alt="Foto 1"/>
             <p>Candidato 1</p>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="radio-cand" id="radio-cand-1" value="option1">
+                <input class="form-check-input" type="radio" name="radioCand" value="option1">
             </div>
         </center>
     </div>
@@ -59,7 +63,7 @@
             <img src="assets/candidato2.png" class="resolucao" alt="Foto 2"/>
             <p>Candidato 2</p>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="radio-cand" id="radio-cand-2" value="option2">
+                <input class="form-check-input" type="radio" name="radioCand" value="option2">
             </div>
         </center>    
     </div>
@@ -68,7 +72,7 @@
             <img src="assets/candidato3.png" class="resolucao" alt="Foto 3"/>
             <p>Candidato 3</p>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="radio-cand" id="radio-cand-3" value="option3">
+                <input class="form-check-input" type="radio" name="radioCand" value="option3">
             </div>
         </center>
     </div>
@@ -77,7 +81,7 @@
             <input class="btn btn-outline-dark" type="submit" value="Votar">
         </center>
     </div>
-    </div>    
+</form>  
 </div>
 
 
@@ -99,6 +103,8 @@
     </svg>
 </a>
 </footer>
+
+<script type="text/javascript" src="./js/script.js"></script>
 
 </body>
 </html>
