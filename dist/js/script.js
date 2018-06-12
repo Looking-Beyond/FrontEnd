@@ -1,0 +1,1 @@
+function drawChart(){var a=google.visualization.arrayToDataTable([["Task","Votes"],["Candidato 1",25],["Candidato 2",40],["Candidato 3",33]]);new google.visualization.PieChart(document.getElementById("piechart")).draw(a,{title:"Votos",width:300,height:300})}google.charts.load("current",{packages:["corechart"]}),google.charts.setOnLoadCallback(drawChart);
